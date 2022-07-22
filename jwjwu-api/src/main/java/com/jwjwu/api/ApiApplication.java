@@ -1,13 +1,13 @@
-package com.jwjwu.admin;
+package com.jwjwu.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JwjwuAdminApplication {
+public class ApiApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(JwjwuAdminApplication.class, args);
+        SpringApplication.run(ApiApplication.class, args);
     }
 
 }
