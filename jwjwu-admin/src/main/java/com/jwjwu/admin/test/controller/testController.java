@@ -1,5 +1,6 @@
 package com.jwjwu.admin.test.controller;
 
+import com.jwjwu.common.utils.Result;
 import com.jwjwu.common.utils.TestUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class testController {
 
     @GetMapping("index")
-    public String index(){
-        return TestUtils.getTestStr("admin");
+    public Result index(){
+        return new Result().ok("admin访问成功");
     }
 }
