@@ -6,21 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="jwjwu-common" />
-        <module name="jwjwu-admin" />
+        <module name="common" />
         <module name="jwjwu-api" />
-        <module name="jwjwu" />
+        <module name="admin" />
+        <module name="jwjwu-common" />
+        <module name="api" />
+        <module name="jwjwu-admin" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="admin" target="1.8" />
-      <module name="api" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="admin" options="-parameters" />
       <module name="api" options="-parameters" />
+      <module name="common" options="-parameters" />
       <module name="jwjwu-admin" options="-parameters" />
       <module name="jwjwu-api" options="-parameters" />
       <module name="jwjwu-common" options="-parameters" />

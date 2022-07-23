@@ -1,9 +1,10 @@
-package com.jwjwu.api.test.controller;
+package com.jwjwu.admin.test.controller;
 
 import com.jwjwu.common.utils.TestUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 
 /**
  * 测试
@@ -14,6 +15,6 @@ public class testController {
 
     @GetMapping("index")
     public String index(){
-        return TestUtils.getTestStr("api");
+        return TestUtils.getTestStr("admin");
     }
 }
