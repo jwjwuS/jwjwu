@@ -11,6 +11,8 @@
     </parent>
 
     <artifactId>jwjwu-admin</artifactId>
+    <packaging>jar</packaging>
+    <description>jwjwu-admin</description>
 
     <dependencies>
         <!--本地jar-->
@@ -21,5 +23,18 @@
         </dependency>
         <!--本地jar结束-->
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <includeSystemScope>true</includeSystemScope>
+                    <mainClass>com.jwjwu.admin.AdminApplication</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

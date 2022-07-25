@@ -27,6 +27,31 @@
         <module>jwjwu-api</module>
     </modules>
 
+    <repositories>
+        <repository>
+            <id>public</id>
+            <name>aliyun nexus</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>public</id>
+            <name>aliyun nexus</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -46,27 +71,11 @@
     </dependencies>
 
     <build>
-        <!--<pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-war-plugin</artifactId>
-                    <version>3.2.0</version>
-                </plugin>
-            </plugins>
-        </pluginManagement>-->
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.2.0</version>
-            </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <includeSystemScope>true</includeSystemScope>
-                </configuration>
             </plugin>
         </plugins>
     </build>
